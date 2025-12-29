@@ -17,8 +17,7 @@ export function Hero({ profile }: HeroProps) {
                 <h1 className="font-display font-black uppercase tracking-tighter mix-blend-difference text-white mb-4">
                     <TextReveal
                         text="Satria Ibnu"
-                        text2="Safarudin"
-                        className="text-[3.5vw] md:text-[3rem] leading-[1.1] tracking-normal"
+                        className="text-4xl md:text-6xl lg:text-7xl leading-[1.1] tracking-normal"
                         delay={0.2}
                     />
                     <span className="block text-3xl md:text-5xl text-f1-red tracking-normal mt-4 font-bold overflow-hidden">
@@ -28,7 +27,7 @@ export function Hero({ profile }: HeroProps) {
                             transition={{ delay: 0.8, duration: 0.5, ease: "easeOut" }}
                             className="block"
                         >
-                            Junior Web Developer
+                            Junior Fullstack Developer
                         </motion.span>
                     </span>
                 </h1>
