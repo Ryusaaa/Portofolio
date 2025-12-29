@@ -52,7 +52,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     description: "Internal accounting system developed during my internship at PT DiAntara Intermedia. tailored for the Finance division to manage financial records and reporting.",
     image: "/Image/Accounting-Diantara.png",
     tags: ["Laravel", "Vue.js", "Accounting", "Internal System"],
-    year: "2024",
+    year: "2025",
     type: "Web Development"
   },
   {

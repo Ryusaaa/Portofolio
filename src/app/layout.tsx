@@ -34,9 +34,8 @@ const f1Font = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Ryusaaa | F1 Inspired Portfolio",
-  description: "High-performance frontend engineering. Built with Next.js and Tailwind.",
-  // Icon is handled automatically by src/app/icon.png
+  title: "Satria Ibnu Safarudin | Portofolio",
+  description: "High-performance Junior Fullstack engineering. Built with Next.js and Tailwind.",
 };
 
 export default function RootLayout({

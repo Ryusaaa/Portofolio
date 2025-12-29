@@ -195,7 +195,7 @@ export function Navbar() {
                                         Based in Bandung, Indonesia.
                                     </p>
                                     <p className="text-[10px] text-zinc-600 font-mono">
-                                        © {new Date().getFullYear()} RYSF
+                                        © {new Date().getFullYear()} STF
                                     </p>
                                 </motion.div>
                             </div>
