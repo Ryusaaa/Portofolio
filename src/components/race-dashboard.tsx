@@ -95,8 +95,6 @@ export function RaceDashboard({ activity }: { activity: ActivityEvent[] }) {
                                     { bg: 'bg-purple-500/20', border: 'border-purple-500', text: 'text-purple-400', label: 'text-purple-500' }, // Purple - Fastest
                                     { bg: 'bg-green-500/20', border: 'border-green-500', text: 'text-green-400', label: 'text-green-500' },   // Green - Personal Best
                                     { bg: 'bg-yellow-500/20', border: 'border-yellow-500', text: 'text-yellow-400', label: 'text-yellow-500' }, // Yellow - Current
-                                    { bg: 'bg-f1-red/20', border: 'border-f1-red', text: 'text-red-400', label: 'text-f1-red' },               // Red
-                                    { bg: 'bg-blue-500/20', border: 'border-blue-500', text: 'text-blue-400', label: 'text-blue-500' },       // Blue
                                 ];
                                 const color = sectorColors[index % sectorColors.length];
                                 return (
