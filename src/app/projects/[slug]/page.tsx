@@ -10,11 +10,20 @@ interface PageProps {
 
 export const revalidate = 3600;
 
+// Allow dynamic params - pages will be generated on-demand if not pre-built
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
-    const repos = await getRepos();
-    return repos.map((repo) => ({
-        slug: repo.name,
-    }));
+    try {
+        const repos = await getRepos();
+        return repos.map((repo) => ({
+            slug: repo.name,
+        }));
+    } catch (error) {
+        console.error("Failed to generate static params:", error);
+        // Return empty array - pages will be generated on-demand
+        return [];
+    }
 }
 
 // Generate project description based on repo data
