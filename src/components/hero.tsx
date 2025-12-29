@@ -16,7 +16,8 @@ export function Hero({ profile }: HeroProps) {
                 {/* Name - Huge Typography */}
                 <h1 className="font-display font-black uppercase tracking-tighter mix-blend-difference text-white mb-4">
                     <TextReveal
-                        text="Satria Ibnu"
+                        text="Satria"
+                        text2="Ibnu"
                         className="text-4xl md:text-6xl lg:text-7xl leading-[1.1] tracking-normal"
                         delay={0.2}
                     />
