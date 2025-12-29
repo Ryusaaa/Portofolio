@@ -1,4 +1,5 @@
 import { GithubProfile, GithubRepo } from "@/types";
+export type { GithubProfile, GithubRepo };
 
 const GITHUB_USERNAME = process.env.NEXT_PUBLIC_GITHUB_USERNAME || "Ryusaaa";
 const BASE_URL = "https://api.github.com";
