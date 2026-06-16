@@ -33,7 +33,7 @@ export interface ProjectItem {
   tags: string[];
   year: string;
   link?: string;
-  type: "Web Development" | "UI/UX Design" | "Mobile App";
+  type: "Web Development" | "UI/UX Design" | "Mobile App" | "Game Development";
 }
 
 export const PROJECTS_DATA: ProjectItem[] = [
@@ -63,6 +63,15 @@ export const PROJECTS_DATA: ProjectItem[] = [
     tags: ["Laravel", "React Vite", "School System", "Counseling", "Management"],
     year: "2025",
     type: "Web Development"
+  },
+  {
+    id: "ashbound",
+    title: "Ashbound",
+    description: "Ashbound is a multiplayer co-op RPG developed using Flutter and the Flame game engine. The project was created as an exploration of how Flutter can be used beyond traditional application development to build interactive multiplayer experiences across multiple platforms.",
+    image: "/Image/Ashbound.png",
+    tags: ["Flutter", "Flame", "Elysiajs", "Multiplayer"],
+    year: "2026",
+    type: "Game Development"
   }
 ];
 

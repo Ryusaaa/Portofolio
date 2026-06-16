@@ -435,6 +435,67 @@ function TechStackSection({ project }: { project: Project }) {
   );
 }
 
+function LinksSection({ project }: { project: Project }) {
+  if (!project.githubFrontend && !project.githubBackend) return null;
+
+  return (
+    <section className="border-b border-[#38383f]">
+      <div className="container mx-auto px-6 md:px-12 py-16 md:py-24">
+        <div className="grid grid-cols-1 md:grid-cols-[80px_1fr] gap-8 md:gap-16">
+          {/* Left label */}
+          <div className="hidden md:flex items-start justify-center pt-1">
+            <span className="writing-vertical font-mono text-[10px] uppercase tracking-[0.3em] text-[#e10600] select-none">
+              LINKS
+            </span>
+          </div>
+
+          {/* Mobile label */}
+          <div className="md:hidden flex items-center gap-3 mb-2">
+            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#e10600]">
+              LINKS
+            </span>
+            <div className="h-[1px] flex-1 bg-[#38383f]" />
+          </div>
+
+          <div>
+            <div className="flex items-center gap-4 mb-8">
+              <h2 className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#a1a1aa]">
+                Repositories
+              </h2>
+              <div className="h-[1px] flex-1 bg-[#38383f]" />
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-6">
+              {project.githubFrontend && (
+                <Link
+                  href={project.githubFrontend}
+                  target="_blank"
+                  className="group flex items-center gap-4 font-mono text-sm uppercase tracking-widest text-[#a1a1aa] hover:text-[#e10600] transition-colors duration-300"
+                >
+                  <span className="block w-8 h-[1px] bg-[#38383f] transition-all duration-300 group-hover:bg-[#e10600] group-hover:w-12" />
+                  <span>Frontend Repo</span>
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
+                </Link>
+              )}
+              {project.githubBackend && (
+                <Link
+                  href={project.githubBackend}
+                  target="_blank"
+                  className="group flex items-center gap-4 font-mono text-sm uppercase tracking-widest text-[#a1a1aa] hover:text-[#e10600] transition-colors duration-300"
+                >
+                  <span className="block w-8 h-[1px] bg-[#38383f] transition-all duration-300 group-hover:bg-[#e10600] group-hover:w-12" />
+                  <span>Backend Repo</span>
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">↗</span>
+                </Link>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function GallerySection({ images }: { images: string[] }) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
@@ -642,6 +703,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
       <AestheticImageSection project={project} />
       <ConceptSection project={project} />
       <TechStackSection project={project} />
+      <LinksSection project={project} />
       {project.detailImages && project.detailImages.length > 0 && (
         <GallerySection images={project.detailImages} />
       )}

@@ -7,6 +7,8 @@ export interface Project {
   description: string;
   aestheticImage: string;
   detailImages?: string[];
+  githubFrontend?: string;
+  githubBackend?: string;
 }
 
 export const projects: Project[] = [
@@ -52,6 +54,30 @@ export const projects: Project[] = [
     tags: ["WebSocket", "Real-time Chat", "Laravel", "Student Platform"],
     description: `This project was developed to improve communication between students and school counselors, where delays and lack of real-time interaction reduced the effectiveness of support. I worked in a team of four as a backend developer and technical lead. I communicated with counselors to understand common student issues and existing communication patterns, then translated those insights into system requirements. On the technical side, I implemented a real-time chat system using WebSocket, focusing on message handling and system reliability. Through this project, I learned how to lead technical decisions, translate user needs into system design, and build backend systems that support real-time interaction.`,
     aestheticImage: "/Image/SIBENING-AESTHETIC.png",
+  },
+  {
+    slug: "ashbound",
+    title: "ASHBOUND",
+    role: "Fullstack Game Developer",
+    year: "2026",
+    tags: ["Flutter", "Flame", "Elysiajs", "Multiplayer", "RPG"],
+    description: `Ashbound is a multiplayer co-op RPG developed using Flutter and the Flame game engine. The project was created as an exploration of how Flutter can be used beyond traditional application development to build interactive multiplayer experiences across multiple platforms. I built the client side using Flame to handle the game loop and rendering, and developed the backend using Elysiajs for networking and game state synchronization.`,
+    aestheticImage: "/Image/ASHBOUND-AESTHETIC.png",
+    detailImages: [
+      "/Image/detail-ashbound/PAGE-WELCOME.png",
+      "/Image/detail-ashbound/PAGE-MAINMENU.png",
+      "/Image/detail-ashbound/PAGE-STARTGAME.png",
+      "/Image/detail-ashbound/PAGE-MULTIPLAYER(ENTER-THE-ASH).png",
+      "/Image/detail-ashbound/PAGE-CREATE-ROOM.png",
+      "/Image/detail-ashbound/PAGE-JOIN-ROOM.png",
+      "/Image/detail-ashbound/PAGE-WAITING-ROOM.png",
+      "/Image/detail-ashbound/PAGE-CHOOSE-ROLE.png",
+      "/Image/detail-ashbound/PAGE-LETTER.png",
+      "/Image/detail-ashbound/PAGE-MESSAGE-501.png",
+      "/Image/detail-ashbound/PAGE-SETTING.png",
+    ],
+    githubFrontend: "https://github.com/Ryusaaa/ashbound-frontend",
+    githubBackend: "https://github.com/Ryusaaa/ashbound-backend",
   },
 ];
 

@@ -13,6 +13,7 @@ const slugMap: Record<string, string> = {
   "SOD (Sertifikat Online Diantara)": "certificate-generator",
   "Accounting Diantara": "accounting-system",
   "Si-Bening": "sibening",
+  "Ashbound": "ashbound",
 };
 
 /* ── Custom Cursor ───────────────────────────────────────── */
