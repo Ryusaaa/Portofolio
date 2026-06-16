@@ -68,7 +68,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     id: "ashbound",
     title: "Ashbound",
     description: "Ashbound is a multiplayer co-op RPG developed using Flutter and the Flame game engine. The project was created as an exploration of how Flutter can be used beyond traditional application development to build interactive multiplayer experiences across multiple platforms.",
-    image: "/Image/Ashbound.png",
+    image: "/Image/ASHBOUND_AESTHETHIC.png",
     tags: ["Flutter", "Flame", "Elysiajs", "Multiplayer"],
     year: "2026",
     type: "Game Development"

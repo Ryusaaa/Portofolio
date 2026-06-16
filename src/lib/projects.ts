@@ -62,7 +62,7 @@ export const projects: Project[] = [
     year: "2026",
     tags: ["Flutter", "Flame", "Elysiajs", "Multiplayer", "RPG"],
     description: `Ashbound is a multiplayer co-op RPG developed using Flutter and the Flame game engine. The project was created as an exploration of how Flutter can be used beyond traditional application development to build interactive multiplayer experiences across multiple platforms. I built the client side using Flame to handle the game loop and rendering, and developed the backend using Elysiajs for networking and game state synchronization.`,
-    aestheticImage: "/Image/ASHBOUND-AESTHETIC.png",
+    aestheticImage: "/Image/ASHBOUND_AESTHETHIC.png",
     detailImages: [
       "/Image/detail-ashbound/PAGE-WELCOME.png",
       "/Image/detail-ashbound/PAGE-MAINMENU.png",
